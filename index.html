@@ -1,265 +1,752 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="CSS/header.css">
-  <link rel="stylesheet" href="CSS/nav-2.css">
-  <link rel="stylesheet" href="CSS/main.css">
-  <title>youtube</title>
-</head>
-<body>
-  <div class="grid-section">
-  <header>
-    <div class="left-section">
-      <img src="Image/hamburger-menu.svg" class="hamburger-menu" >
-      <img src="Image/youtube-logo.svg" class="youtube-logo">
-    </div>
-    <div class="middle-section">
-      <input type="search"class="search-bar" placeholder="search">
-      <div class="search-right">
-        <img src="Image/search.svg" class="search">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="CSS/style.css"
+    />
+    <!-- font google -->
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>youtube</title>
+  </head>
+  <body>
+    <header>
+      <div class="left-section">
+        <img
+          src="Image/hamburger-menu.svg"
+          class="hamburger-menu"
+        />
+        <img
+          src="Image/youtube-logo.svg"
+          class="youtube-logo"
+        />
       </div>
-      <div class="voice-search">
-        <img src="Image/voice-search-icon.svg">
+      <div class="middle-section">
+        <input
+          type="search"
+          class="search-bar"
+          placeholder="search"
+        />
+        <div class="search-right">
+          <img
+            src="Image/search.svg"
+            class="search"
+          />
+        </div>
+        <div class="voice-search">
+          <img src="Image/voice-search-icon.svg" />
+        </div>
       </div>
-    </div>
-    <div class="right-section">
-      <img src="Image/upload.svg" class="right-section-img">
-      <img src="Image/youtube-apps.svg" class="right-section-img">
-      <div class="father"><img src="Image/notifications.svg" class="right-section-img ">
-      <div class="number">3</div></div>
-      <img src="Image/channels4_profile.jpg" class="right-section-img photo"
-    </div>
-  </header>
-  <nav class="nav-2">
-    <div class="icons">
-     كل المحتوى
-    </div>
-    <div class="icons">
-    تشكيلات 
-    </div>
-    <div class="icons">
-      موسيقى
-    </div>
-    <div class="icons">
-      مباشر
-    </div>
-    <div class="icons">
-      رياضيات
-    </div>
-    <div class="icons">
-      القنوات التي تم تحميلها مؤخراً
-    </div>
-    <div class="icons">
-    تمت مشاهدتها
-    </div>
-    <div class="icons">
-      متحتوي جيد لك 
-    </div>
-  </nav>
-  <nav>
-    <div class="items"> 
-      <img src="Image/home.svg">
-      <div class="names-items">home</div>
-    </div>
-    <div class="items"> 
-      <img src="Image/explore.svg">
-      <div class="names-items">explor</div>
-    </div>
-    <div class="items"> 
-      <img src="Image/subscriptions.svg">
-      <div class="names-items sup">subscription</div>
-    </div>
-    <div class="items"> 
-      <img src="Image/originals.svg">
-      <div class="names-items">originals</div>
-    </div>
-    <div class="items"> 
-      <img src="Image/youtube-music.svg">
-      <div class="names-items">youtube-music</div>
-    </div>
-    <div class="items"> 
-      <img src="Image/library.svg" >
-      <div class="names-items">library</div>
-    </div>
-  </nav>
-  <main>
+      <div class="right-section">
+        <img
+          src="Image/upload.svg"
+          class="right-section-img display-none"
+        />
+        <img
+          src="Image/youtube-apps.svg "
+          class="right-section-img display-none"
+        />
+        <div class="father">
+          <img
+            src="Image/notifications.svg"
+            class="right-section-img"
+          />
+          <span class="number">3</span>
+        </div>
+        <img
+          src="Image/channels4_profile.jpg"
+          class="right-section-img photo"
+        />
+      </div>
+    </header>
     <div class="main-grid">
-    <div class="video-container">
-      <div class="video">
-        <div class="thumbnail">
-          <img src="Image/img-voide/video1.webp">
-          <div class="time">1:08:45</div>
+      <nav class="nav-2">
+        <div class="icons">كل المحتوى</div>
+        <div class="icons">تشكيلات</div>
+        <div class="icons display-none">موسيقى</div>
+        <div class="icons">مباشر</div>
+        <div class="icons display-none">رياضيات</div>
+        <div class="icons">برمجة</div>
+        <div class="icons display-none">خوازميات</div>
+        <div class="icons display-none">القنوات التي تم تحميلها مؤخراً</div>
+        <div class="icons">تمت مشاهدتها</div>
+        <div class="icons">متحتوي جيد لك</div>
+      </nav>
+      <aside class="display-none">
+        <div class="items">
+          <img src="Image/home.svg" />
+          <div class="names-items">home</div>
         </div>
-        <div class="video-details">
-          <div class="creator-img">
-            <img src="Image/img-profile/profile-1.jpg">
-          </div>
-          <div class="title">
-            <a href="" class="video-title">
-              كيف تصمم بيئة النجاح
-            </a>
-            <a href="" class="video-creator">
-             mohamad aljaber
-            </a>
-            <span>
-              10M Views • 3 Months Ago 
-          </span>
+        <div class="items">
+          <img src="Image/explore.svg" />
+          <div class="names-items">explor</div>
         </div>
-      </div>
-    </div>
-    </div>
-    <div class="video-container">
-      <div class="video">
-        <div class="thumbnail">
-          <img src="Image/img-voide/video2.webp">
-          <div class="time">16:23</div>
+        <div class="items">
+          <img src="Image/subscriptions.svg" />
+          <div class="names-items sup">subscription</div>
         </div>
-        <div class="video-details">
-          <div class="creator-img">
-            <img src="Image/img-profile/profile-2.jpg">
-          </div>
-          <div class="title">
-            <a href="" class="video-title">
-              اساسيات المفاهيم البرمجية
-            </a>
-            <a href="" class="video-creator">
-              mohamad aljaber
-            </a>
-            <span>
-              10M Views • 3 Months Ago 
-          </span>
+        <div class="items">
+          <img src="Image/originals.svg" />
+          <div class="names-items">originals</div>
         </div>
-      </div>
-      </div>
-    </div>
-    <div class="video-container">
-      <div class="video">
-        <div class="thumbnail">
-          <img src="Image/img-voide/video3.webp">
-            <div class="time">2:15:05</div>
+        <div class="items">
+          <img src="Image/youtube-music.svg" />
+          <div class="names-items">youtube-music</div>
         </div>
-        <div class="video-details">
-          <div class="creator-img">
-            <img src="Image/img-profile/profile-3.jpg">
-          </div>
-          <div class="title">
-            <a href="" class="video-title">
-             سورة البقرة
-            </a>
-            <a href="" class="video-creator">
-             mohamad aljaber
-            </a>
-            <span>
-              10M Views • 3 Months Ago 
-          </span>
+        <div class="items">
+          <img src="Image/library.svg" />
+          <div class="names-items">library</div>
         </div>
-      </div>
-    </div>
-    </div>
-    <div class="video-container">
-      <div class="video">
-        <div class="thumbnail">
-          <img src="Image/img-voide/video4.webp">
-          <div class="time">1:00:00</div>
-        </div>
-        <div class="video-details">
-          <div class="creator-img">
-            <img src="Image/img-profile/profile-4.jpg">
-          </div>
-          <div class="title">
-            <a href="" class="video-title">
-              كريستال
-            </a>
-            <a href="" class="video-creator">
-             mohamad aljaber
-            </a>
-            <span>
-              10M Views • 3 Months Ago 
-          </span>
-        </div>
-      </div>
-      </div>
-    </div>
-    
-    <div class="video-container">
-      <div class="video">
-        <div class="thumbnail">
-          <img src="Image/img-voide/video5.webp">
-          <div class="time">2:15:05</div>
-        </div>
-        <div class="video-details">
-          <div class="creator-img">
-            <img src="Image/img-profile/profile-5.jpg">
-          </div>
-          <div class="title">
-            <a href="" class="video-title">
-            learn html /css 
-            </a>
-            <a href="" class="video-creator">
-             mohamad aljaber
-            </a>
-            <span>
-              10M Views • 3 Months Ago 
-          </span>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="video-container">
-      <div class="video">
-        <div class="thumbnail">
-          <img src="Image/img-voide/video6.webp">
-          <div class="time">2:15:05</div>
-        </div>
-        <div class="video-details">
-          <div class="creator-img">
-            <img src="Image/img-profile/profile-6.jpg">
-          </div>
-          <div class="title">
-            <a href="" class="video-title">
-             انت هوي
-            </a>
-            <a href="" class="video-creator">
-             mohamad aljaber
-            </a>
-            <span>
-              10M Views • 3 Months Ago 
-          </span>
-        </div>
-      </div>
-    </div>
-    </div>
-    <div class="main-grid">
-      <div class="video-container">
-        <div class="video">
+      </aside>
+      <main>
+        <div class="video-container">
           <div class="thumbnail">
-            <img src="Image/img-voide/video1.webp">
-            <div class="time">15:05</div>
+            <img src="Image/img-voide/video1.webp" />
+            <span class="time">1:08:45</span>
           </div>
           <div class="video-details">
             <div class="creator-img">
-              <img src="Image/img-profile/profile-1.jpg">
-            </div>
-            <div class="title">
-              <a href="" class="video-title">
+              <img src="Image/img-profile/profile-1.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
                 كيف تصمم بيئة النجاح
               </a>
-              <span class="section-detalis-vidoe">
-              <a href="" class="video-creator">
-               mohamad aljaber
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
               </a>
-              <span>
-                10M Views • 3 Months Ago 
-            </span>
-          </span>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
           </div>
         </div>
-      </div>
-      </div>
-  </div>
-  </main>
-  </div>
-</body>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video2.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-2.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video3.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-3.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video4.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-4.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video5.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-5.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video6.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-6.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video7.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-7.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video8.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-8.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video1.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-1.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video2.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-2.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video3.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-3.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video4.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-4.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video5.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-5.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video6.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-6.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video7.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-7.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video8.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-8.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video1.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-1.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video2.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-2.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video3.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-3.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video4.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-4.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video5.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-5.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video6.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-6.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video7.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-7.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <div class="video-container">
+          <div class="thumbnail">
+            <img src="Image/img-voide/video8.webp" />
+            <span class="time">1:08:45</span>
+          </div>
+          <div class="video-details">
+            <div class="creator-img">
+              <img src="Image/img-profile/profile-8.jpg" />
+              <a
+                href=""
+                class="video-title"
+              >
+                كيف تصمم بيئة النجاح
+              </a>
+            </div>
+            <div class="title">
+              <a
+                href=""
+                class="video-creator"
+              >
+                mohamad aljaber
+              </a>
+              <span> 10M Views • 3 Months Ago </span>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+        
+      </main>
+    </div>
+  </body>
 </html>
